@@ -1,8 +1,9 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useLocalSearchParams } from 'expo-router';
 import getUnicodeFlagIcon from 'country-flag-icons/unicode'
 import emergencyData from '../../../Data/emergency';
+import { Linking } from 'react-native';
 
 const emergencyDetails = () => {
     const { id } = useLocalSearchParams();
@@ -16,6 +17,10 @@ const emergencyDetails = () => {
         );
     }
 
+    const makeCall = (number: string) => {
+        Linking.openURL(`tel:${number}`);
+    }
+
     return (
         <View className='flex-1 items-center justify-center '>
             <View className='p-4 m-4 bg-white w-[80%] h-[80%] rounded-3xl shadow-2xl'>
@@ -23,15 +28,15 @@ const emergencyDetails = () => {
                     <Text style={{ fontSize: 56 }}>{getUnicodeFlagIcon(id.toString())}</Text>
                     <Text className='px-4 text-[56px] font-bold'>{countryData.ISO}</Text>
                 </View>
-                <View className='p-4 my-4 mr-4 h-28 bg-gray-100 rounded-3xl flex-row justify-center items-center shadow-2xl'>
+                <TouchableOpacity className='p-4 my-4 mr-4 h-28 bg-gray-100 rounded-3xl flex-row justify-center items-center shadow-2xl' onPress={() => makeCall(countryData.police)}>
                     <Text className='text-[28px] font-light'>Police: {countryData.police}</Text>
-                </View>
-                <View className='p-4 my-4 mr-4 h-28 bg-gray-100 rounded-3xl flex-row justify-center items-center shadow-2xl'>
+                </TouchableOpacity>
+                <TouchableOpacity className='p-4 my-4 mr-4 h-28 bg-gray-100 rounded-3xl flex-row justify-center items-center shadow-2xl' onPress={() => makeCall(countryData.fire)}>
                     <Text className='text-[28px] font-light'>Fire: {countryData.fire}</Text>
-                </View>
-                <View className='p-4 my-4 mr-4 h-28 bg-gray-100 rounded-3xl flex-row justify-center items-center shadow-2xl'>
+                </TouchableOpacity>
+                <TouchableOpacity className='p-4 my-4 mr-4 h-28 bg-gray-100 rounded-3xl flex-row justify-center items-center shadow-2xl' onPress={() => makeCall(countryData.ambulance)}>
                     <Text className='text-[28px] font-light'>Ambulance: {countryData.ambulance}</Text>
-                </View>
+                </TouchableOpacity>
             </View>
         </View>
     )

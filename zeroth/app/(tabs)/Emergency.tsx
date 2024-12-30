@@ -28,7 +28,7 @@ const Emergency = () => {
         />
       </View>
       <FlatList
-        contentContainerStyle={{ paddingTop: 80 }} // Adjust padding to prevent overlap
+        contentContainerStyle={{ paddingTop: 80,paddingBottom :120 }} // Adjust padding to prevent overlap
         data={renderData}
         renderItem={({ item }: { item: { ISO: string; countryName: string; fire: string; police: string; ambulance: string; } }) => (
           <TouchableOpacity className='p-2 my-3 bg-white rounded-2xl flex-row items-center shadow-2xl' onPress={() => router.replace(`/emergencyDetails/${item.ISO}`)}>
