@@ -14,7 +14,7 @@ const Home = () => {
       data={firstAidDataIndex}
       keyExtractor={(item) => item.name}
       renderItem={({ item }: { item: { name: string; index: number; content: string[] } }) => (
-        <TouchableOpacity className='p-12 my-3 bg-white rounded-2xl flex-row items-center shadow-2xl' onPress={() => router.replace(`/Settings`)}>
+        <TouchableOpacity className='p-12 my-3 bg-white rounded-2xl flex-row items-center shadow-2xl' onPress={() => router.replace(`/firstAidSelect/${item.name}`)}>
         <Text className='text-2xl font-normal'>{item.name}</Text>
         </TouchableOpacity>
       )}
