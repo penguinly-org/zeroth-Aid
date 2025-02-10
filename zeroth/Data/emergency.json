@@ -1,4 +1,4 @@
-const data =[
+[
     {
         "ISO": "AX",
         "countryName": "Aland Islands",
@@ -952,5 +952,3 @@ const data =[
         "ambulance": "N/A"
     }
 ]
-
-export default data;

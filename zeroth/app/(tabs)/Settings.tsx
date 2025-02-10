@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Scan = () => {
+const settings = () => {
   return (
     <View>
-      <Text>Scan</Text>
+      <Text>settings</Text>
     </View>
   )
 }
 
-export default Scan
+export default settings

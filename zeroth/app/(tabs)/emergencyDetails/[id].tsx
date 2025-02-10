@@ -2,8 +2,9 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useLocalSearchParams } from 'expo-router';
 import getUnicodeFlagIcon from 'country-flag-icons/unicode'
-import emergencyData from '../../../Data/emergency';
 import { Linking } from 'react-native';
+
+import emergencyData from '../../../Data/emergency.json';
 
 const emergencyDetails = () => {
     const { id } = useLocalSearchParams();

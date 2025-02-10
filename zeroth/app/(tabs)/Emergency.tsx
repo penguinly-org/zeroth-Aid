@@ -1,6 +1,6 @@
 import { View, Text, FlatList, Image, TextInput, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
-import data from '../../Data/emergency'
+import data from '../../Data/emergency.json'
 import getUnicodeFlagIcon from 'country-flag-icons/unicode'
 import { router } from 'expo-router'
 

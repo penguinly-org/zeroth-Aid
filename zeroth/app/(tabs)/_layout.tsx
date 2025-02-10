@@ -6,8 +6,9 @@ import TabBar from '../../components/TabBar'
 const _layout = () => {
   return (
     <Tabs tabBar={props => <TabBar {...props}  /> } screenOptions={{ headerShown: false }}>
-        <Tabs.Screen name='Scan' options={{title:"Scan"}}/>
+        <Tabs.Screen name='Home' options={{title:"Home"}}/>
         <Tabs.Screen name='Emergency' options={{title:"Emergency"}}/>
+        <Tabs.Screen name='Settings' options={{title:"Settings"}}/>
     </Tabs>
   )
 }

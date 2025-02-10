@@ -5,10 +5,11 @@ import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
   const icons: { [key: string]: (props: any) => JSX.Element } = {
     "Emergency": (props:any) => (<Icon name="phone" size={32} {...props}/>),
-    "Scan": (props:any) => (<Icon name="scan-helper" size={32} {...props}/>)
+    "Home": (props:any) => (<Icon name="home" size={32} {...props}/>),
+    "Settings": (props:any) => (<Icon name="cog" size={32} {...props}/>),
   }
 
-  const filteredRoutes = state.routes.filter(route => route.name === "Emergency" || route.name === "Scan");
+  const filteredRoutes = state.routes.filter(route => route.name === "Emergency" || route.name === "Home" || route.name === "Settings");
 
   return (
     <View className='absolute bottom-12 flex-row justify-between align-center bg-gray-950 mx-[25%] rounded-3xl p-4 shadow-lg'> 

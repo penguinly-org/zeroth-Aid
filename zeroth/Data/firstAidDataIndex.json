@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Unresponsiveness",
+        "index": 0,
+        "content": [
+            "Unresponsive-and-breathing-normally",
+            "Unresponsive-and-abnormal-breathing-adolescent-and-adult",
+            "Unresponsive-and-abnormal-breathing-baby-and-child)",
+            "Unresponsive-and-abnormal-breathing-when-a-defibrillator-is-available",
+            "Unresponsive-and-abnormal-breathing-with-suspected-opioid-overdose"
+        ]
+    },
+    {
+        "name": "Breathing problems",
+        "index": 1,
+        "content": [
+            "Choking",
+            "Breathing-difficulties",
+            "Asthma-attack",
+            "Croup"
+        ]
+    },
+    {
+        "name": "Trauma",
+        "index": 2,
+        "content": [
+            "Severe-bleeding",
+            "Chest-and-abdomen-injuries",
+            "Amputation",
+            "Cuts-and-grazes",
+            "Dental-avulsion",
+            "Blister",
+            "Burns",
+            "Flash eye",
+            "Fractures-sprains-and-strains",
+            "Spinal-injury",
+            "Head-injury",
+            "Acute-lower-back-pain",
+            "Mammal-bites",
+            "Insect-bites-or-stings",
+            "Aquatic-animal-injuries",
+            "Snakebites"
+        ]
+    },
+    {
+        "name": "Poisoning",
+        "index": 3,
+        "content": [
+            "Poisoning"
+        ]
+    },
+    {
+        "name": "Medical conditions",
+        "index": 4,
+        "content": [
+            "Chest-pain",
+            "Stroke",
+            "Allergic-reaction-and-anaphylaxis",
+            "Shock",
+            "Diabetic-emergency",
+            "Seizure",
+            "Feeling-faint",
+            "Fever",
+            "Abdominal-pain",
+            "Emergency-childbirth",
+            "Sore-throat",
+            "Earache",
+            "Headache",
+            "Hiccups"
+        ]
+    },
+    {
+        "name": "Environmental",
+        "index": 5,
+        "content": [
+            "Hyperthermia",
+            "Dehydration",
+            "Hypothermia",
+            "Frostbite",
+            "Altitude-sickness",
+            "Motion-sickness",
+            "Decompression-illness",
+            "Radiation-injuries"
+        ]
+    }
+]
